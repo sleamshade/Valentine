@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️ С Днём Святого Валентина! ❤️</title>
+    <link rel="stylesheet" href="valentine-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Лоадер -->
+    <div class="loader">
+        <div class="loader-heart">❤️</div>
+        <p>Готовлю сюрприз...</p>
+    </div>
+
+    <!-- Фоновые сердечки -->
+    <div class="hearts-bg"></div>
+
+    <!-- Основной контент -->
+    <div class="container">
+        <!-- Заголовок -->
+        <header class="hero">
+            <div class="hero-content">
+                <h1 class="title">
+                    <span class="title-line">С Днём</span>
+                    <span class="title-line highlight">Святого Валентина!</span>
+                </h1>
+                <div class="emoji-bounce">💕</div>
+            </div>
+        </header>
+
+        <!-- Поздравление -->
+        <section class="message">
+            <div class="message-card">
+                <div class="sticker sticker-1">🌸</div>
+                <div class="sticker sticker-2">✨</div>
+                <div class="sticker sticker-3">💖</div>
+                
+                <h2>Моя дорогая!</h2>
+                <p class="love-text">
+                    В этот особенный день я хочу сказать тебе, 
+                    что ты — самое прекрасное, что случилось в моей жизни. 
+                    Твоя улыбка освещает мои дни, а твои глаза — 
+                    как звёзды, которые направляют меня.
+                </p>
+                <p class="love-text">
+                    Каждый момент с тобой — это чудо. 
+                    Ты делаешь мир ярче, добрее и прекраснее.
+                    Я люблю тебя больше всех слов на свете! 💝
+                </p>
+                
+                <div class="heart-animation">
+                    <span class="big-heart">❤️</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Причины почему я тебя люблю -->
+        <section class="reasons">
+            <h2 class="section-title">Почему я тебя люблю 🥰</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-emoji">😊</div>
+                    <p>За твою невероятную улыбку</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-emoji">💪</div>
+                    <p>За твою силу и характер</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-emoji">🎨</div>
+                    <p>За твою креативность</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-emoji">💕</div>
+                    <p>За твою доброту</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-emoji">🌟</div>
+                    <p>За то, что ты сияешь</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-emoji">🦋</div>
+                    <p>За твою нежность</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Обещания -->
+        <section class="promises">
+            <h2 class="section-title">Мои обещания тебе 💍</h2>
+            <div class="promise-list">
+                <div class="promise-item">
+                    <span class="promise-icon">🌹</span>
+                    <span>Всегда тебя любить</span>
+                </div>
+                <div class="promise-item">
+                    <span class="promise-icon">☀️</span>
+                    <span>Быть твоим солнцем в пасмурные дни</span>
+                </div>
+                <div class="promise-item">
+                    <span class="promise-icon">🎵</span>
+                    <span>Петь тебе песни, даже если не умею</span>
+                </div>
+                <div class="promise-item">
+                    <span class="promise-icon">🍰</span>
+                    <span>Делить с тобой каждый десерт</span>
+                </div>
+                <div class="promise-item">
+                    <span class="promise-icon">💝</span>
+                    <span>Любить тебя сильнее с каждым днём</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Интерактивная секция -->
+        <section class="interactive">
+            <div class="love-meter">
+                <h3>Насколько я тебя люблю?</h3>
+                <div class="meter-container">
+                    <div class="meter-bar"></div>
+                    <div class="meter-fill" id="loveMeter"></div>
+                </div>
+                <p class="meter-text">Бесконечно! 💕</p>
+            </div>
+
+            <div class="click-hearts">
+                <h3>Нажми на сердечко! 💗</h3>
+                <button class="heart-btn" id="heartBtn">❤️</button>
+                <p class="click-count">Сердечек: <span id="heartCount">0</span></p>
+            </div>
+        </section>
+
+        <!-- Финальное сообщение -->
+        <section class="final-message">
+            <div class="final-card">
+                <div class="sparkles">✨ ✨ ✨</div>
+                <h2>Будь моей Валентиной?</h2>
+                <p class="final-text">
+                    Ты — моя любовь, моя вдохновительница, 
+                    моё всё. Пусть этот день будет таким же 
+                    прекрасным, как ты! 💖
+                </p>
+                <div class="final-buttons">
+                    <button class="btn yes-btn" id="yesBtn">Да! 💕</button>
+                    <button class="btn no-btn" id="noBtn">Нет</button>
+                </div>
+                <div class="response" id="response"></div>
+            </div>
+        </section>
+
+        <!-- Подпись -->
+        <footer class="footer">
+            <p>С любовью, твой 🥰</p>
+            <div class="signature">
+                <span class="signature-heart">❤️</span>
+                <span class="signature-text">Твой Валентин</span>
+            </div>
+            <div class="footer-stickers">
+                <span class="footer-sticker">🌸</span>
+                <span class="footer-sticker">💕</span>
+                <span class="footer-sticker">🦋</span>
+                <span class="footer-sticker">✨</span>
+                <span class="footer-sticker">🌹</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="valentine-script.js"></script>
+</body>
+</html>
